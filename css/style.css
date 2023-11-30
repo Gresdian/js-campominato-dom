@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100px;
+}
+
+.logo{
+    width: 100px;
+}
+
+h1{
+    font-weight: 700;
+}
+
+.grey{
+    background-color: rgb(185, 185, 185);
+    font-weight: 600;
+}
+
+main{
+    background-color: aquamarine;
+}
+
+#grid{
+    width: 1000px;
+    flex-wrap: wrap;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.clicked{
+    background-color: aqua;
+}
+
+
