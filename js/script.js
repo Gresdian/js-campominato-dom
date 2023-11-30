@@ -42,6 +42,7 @@ function createNewGame(){
     const NUMBER_OF_BOMBS = 16;
     grid.innerHTML = '';
     const bombs = generateBombsList(NUMBER_OF_BOMBS);
+    let points = 0;
     //CREAZIONE CICLO FOR PER PRESENTAZIONE TABELLA 10*10  
     for(let i=1; i<=100; i++){
         let cell = createCell(i);
@@ -50,6 +51,9 @@ function createNewGame(){
           cell.addEventListener('click', function(){
             if(!bombs.includes(i)){
                 this.classList.add('clicked');
+                points++;
+
+                document.getElementById('score').innerText = `Total points: ${points}`;
             }
             else{
                 this.classList.add('boom');
